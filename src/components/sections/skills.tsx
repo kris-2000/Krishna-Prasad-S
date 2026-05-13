@@ -24,9 +24,14 @@ const skillCategories = [
     skills: ["MySQL", "MongoDB", "Git", "GitHub", "VS Code", "Node.js", "Tkinter"],
   },
   {
+    title: "Cloud Computing",
+    icon: <Globe className="text-primary" />,
+    skills: ["AWS (EC2, S3)", "Image Recognition Pipelines"],
+  },
+  {
     title: "Embedded & Systems",
     icon: <Cpu className="text-primary" />,
-    skills: ["Microcontrollers", "Sensors", "IoT", "Arduino", "Windows", "Linux", "CLI"],
+    skills: ["Microcontrollers", "Sensors", "IoT", "Arduino", "Windows", "Linux"],
   },
   {
     title: "Soft Skills",

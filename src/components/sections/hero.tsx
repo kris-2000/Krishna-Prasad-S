@@ -16,10 +16,10 @@ export default function Hero() {
             Krishna Prasad S
           </h1>
           <p className="text-xl md:text-2xl font-medium text-muted-foreground">
-            Software Engineer · MCA Student · Blockchain & Web Development
+            Software Engineer · Recent MCA Graduate · Blockchain & Web Development
           </p>
           <p className="max-w-2xl text-base md:text-lg text-muted-foreground">
-            An innovative MCA student building a decentralized authentication system with Ethereum and MetaMask to redefine digital identity.
+            An innovative software engineer and recent MCA graduate building decentralized applications, cloud workflows, and full-stack web solutions.
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <Button size="lg" asChild className="bg-primary/90 hover:bg-primary text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105">

@@ -5,23 +5,34 @@ import { Code, Bot, CircuitBoard, GitBranch } from 'lucide-react';
 
 const projects = [
   {
+    title: "Decentralized NFT Marketplace",
+    icon: <Code className="text-primary" />,
+    description: "Built a full-stack NFT marketplace on Ethereum with minting, listing, and trading features. Developed ERC-721 smart contracts and integrated MetaMask wallet for seamless transactions.",
+    tech: ["Ethereum", "Solidity", "MetaMask", "React.js", "Ethers.js"],
+  },
+  {
     title: "Decentralized Authentication System",
-    status: "In Progress",
     icon: <GitBranch className="text-primary" />,
-    description: "Passwordless, secure authentication using Ethereum, MetaMask, and SIWE with smart contracts for cryptographic identity verification.",
-    tech: ["Ethereum", "Solidity", "MetaMask", "SIWE", "Web3.js", "JavaScript", "HTML5", "CSS3"],
+    description: "Developed passwordless, secure authentication using the Ethereum blockchain, MetaMask, and SIWE protocol with smart contract-based cryptographic identity verification.",
+    tech: ["Ethereum", "Solidity", "MetaMask", "SIWE", "Web3.js", "JavaScript"],
+  },
+  {
+    title: "Image Recognition System on AWS",
+    icon: <Bot className="text-primary" />,
+    description: "Implemented an automated image recognition workflow using AWS cloud services (EC2, S3) and processing pipelines for scalable media analysis.",
+    tech: ["AWS", "Cloud Computing", "Python"],
   },
   {
     title: "JARVIS – Intelligent Virtual Assistant",
     icon: <Bot className="text-primary" />,
-    description: "A voice-activated assistant built in Python to respond to spoken commands and perform various tasks on the local machine.",
+    description: "A voice-activated virtual assistant built in Python to respond to spoken commands and perform various tasks on the local machine.",
     tech: ["Python"],
   },
   {
     title: "Charging and Discharging of RC Circuit",
     icon: <CircuitBoard className="text-primary" />,
-    description: "An academic project to analyze and visualize RC circuit behavior, time constants, and system dynamics through simulation.",
-    tech: ["Physics", "Simulation"],
+    description: "Designed and implemented a real RC circuit using a breadboard and physical components to analyze time constants and circuit dynamics.",
+    tech: ["Physics", "Hardware", "Electronics"],
   },
 ];
 
