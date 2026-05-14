@@ -2,8 +2,18 @@ import { AnimatedSection } from '../animated-section';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Code, Bot, CircuitBoard, GitBranch } from 'lucide-react';
+import React from 'react';
 
-const projects = [
+type Project = {
+  title: string;
+  status?: string;
+  icon: React.ReactNode;
+
+  description: string;
+  tech: string[];
+};
+
+const projects: Project[] = [
   {
     title: "Decentralized NFT Marketplace",
     icon: <Code className="text-primary" />,
