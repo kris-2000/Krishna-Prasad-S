@@ -8,8 +8,8 @@ const education = [
     institution: "College of Engineering, Chengannur, Kerala",
     date: "2024 – 2026",
     description: [
-      "Focused on software engineering, blockchain technologies, and cloud computing.",
-      "Developed a decentralized authentication system and full-stack NFT marketplace.",
+      "Completed comprehensive DevOps course covering Kubernetes, Jenkins, Docker, and CI/CD.",
+      "Focused on cloud computing, containerization, and backend software engineering.",
     ],
   },
   {

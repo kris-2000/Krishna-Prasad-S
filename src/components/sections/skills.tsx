@@ -4,39 +4,34 @@ import { Code, Cpu, Database, Globe, Layers, Users } from 'lucide-react';
 
 const skillCategories = [
   {
+    title: "Cloud Platforms",
+    icon: <Globe className="text-primary" />,
+    skills: ["AWS (Lambda, S3, Rekognition, CloudWatch)", "Basic ECS/Fargate", "Cloud-native concepts"],
+  },
+  {
+    title: "Containers & Orchestration",
+    icon: <Layers className="text-primary" />,
+    skills: ["Docker", "Kubernetes (Deployments, Pods, Services, Ingress)"],
+  },
+  {
+    title: "CI/CD & Automation",
+    icon: <Cpu className="text-primary" />,
+    skills: ["Jenkins", "GitHub Actions", "Maven", "Nexus", "Git", "Bash", "Python scripting"],
+  },
+  {
+    title: "Monitoring & Logging",
+    icon: <Database className="text-primary" />,
+    skills: ["Prometheus", "Grafana", "CloudWatch", "EFK stack"],
+  },
+  {
+    title: "Networking & OS",
+    icon: <Globe className="text-primary" />,
+    skills: ["Security groups", "IAM", "Basic load balancing", "Linux (Ubuntu, RHEL/CentOS)", "SSH"],
+  },
+  {
     title: "Programming",
     icon: <Code className="text-primary" />,
-    skills: ["Python", "Java", "C", "JavaScript", "SQL"],
-  },
-  {
-    title: "Blockchain",
-    icon: <Layers className="text-primary" />,
-    skills: ["Ethereum", "Solidity", "MetaMask", "SIWE", "Web3.js"],
-  },
-  {
-    title: "Web Development",
-    icon: <Globe className="text-primary" />,
-    skills: ["HTML5", "CSS3", "Bootstrap", "Responsive Design", "REST APIs", "Full-stack Dev"],
-  },
-  {
-    title: "Databases & Tools",
-    icon: <Database className="text-primary" />,
-    skills: ["MySQL", "MongoDB", "Git", "GitHub", "VS Code", "Node.js", "Tkinter"],
-  },
-  {
-    title: "Cloud Computing",
-    icon: <Globe className="text-primary" />,
-    skills: ["AWS (EC2, S3)", "Image Recognition Pipelines"],
-  },
-  {
-    title: "Embedded & Systems",
-    icon: <Cpu className="text-primary" />,
-    skills: ["Microcontrollers", "Sensors", "IoT", "Arduino", "Windows", "Linux"],
-  },
-  {
-    title: "Soft Skills",
-    icon: <Users className="text-primary" />,
-    skills: ["Problem Solving", "Team Collaboration", "Project Management", "Documentation"],
+    skills: ["Python", "Bash", "JavaScript", "Java", "C", "SQL"],
   },
 ];
 

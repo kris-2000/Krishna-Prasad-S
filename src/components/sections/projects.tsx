@@ -15,34 +15,22 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Decentralized NFT Marketplace",
+    title: "Image Recognition Pipeline on AWS (Cloud-Native)",
+    icon: <Bot className="text-primary" />,
+    description: "Built serverless event-driven image processing pipeline using AWS Lambda, S3, and Rekognition. Focused on scalability, reliability, and automation of classification workflows.",
+    tech: ["AWS Lambda", "S3", "Rekognition", "Python", "CloudWatch"],
+  },
+  {
+    title: "Smart Extract – AI Document Extractor",
     icon: <Code className="text-primary" />,
-    description: "Built a full-stack NFT marketplace on Ethereum with minting, listing, and trading features. Developed ERC-721 smart contracts and integrated MetaMask wallet for seamless transactions.",
-    tech: ["Ethereum", "Solidity", "MetaMask", "React.js", "Ethers.js"],
+    description: "Developed a desktop application to extract handwritten/printed text and convert documents into structured Excel/Word files using computer vision and machine learning.",
+    tech: ["Python", "PyQt6", "OpenCV", "TrOCR"],
   },
   {
-    title: "Decentralized Authentication System",
+    title: "Decentralized NFT Marketplace",
     icon: <GitBranch className="text-primary" />,
-    description: "Developed passwordless, secure authentication using the Ethereum blockchain, MetaMask, and SIWE protocol with smart contract-based cryptographic identity verification.",
-    tech: ["Ethereum", "Solidity", "MetaMask", "SIWE", "Web3.js", "JavaScript"],
-  },
-  {
-    title: "Image Recognition System on AWS",
-    icon: <Bot className="text-primary" />,
-    description: "Implemented an automated image recognition workflow using AWS cloud services (EC2, S3) and processing pipelines for scalable media analysis.",
-    tech: ["AWS", "Cloud Computing", "Python"],
-  },
-  {
-    title: "JARVIS – Intelligent Virtual Assistant",
-    icon: <Bot className="text-primary" />,
-    description: "A voice-activated virtual assistant built in Python to respond to spoken commands and perform various tasks on the local machine.",
-    tech: ["Python"],
-  },
-  {
-    title: "Charging and Discharging of RC Circuit",
-    icon: <CircuitBoard className="text-primary" />,
-    description: "Designed and implemented a real RC circuit using a breadboard and physical components to analyze time constants and circuit dynamics.",
-    tech: ["Physics", "Hardware", "Electronics"],
+    description: "Built full-stack Ethereum NFT marketplace with ERC-721 smart contracts, React.js, and MetaMask. Applied Git workflows and modular development.",
+    tech: ["Ethereum", "Solidity", "MetaMask", "React.js", "Git"],
   },
 ];
 

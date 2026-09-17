@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Award, BrainCircuit, CheckCircle, Star } from 'lucide-react';
 
 const certifications = [
+  { title: "DevOps Course (Majority Completed) – Kubernetes, Docker, Jenkins, Prometheus, Grafana, CI/CD" },
   { title: "Google Analytics for Beginners – Google (2023)" },
   { title: "Robotics Technology Certification – Specialized Program (2023)" },
   { title: "Cloud Computing (NPTEL, IIT Kharagpur – Swayam)" },
@@ -14,11 +15,11 @@ const achievements = [
 ];
 
 const interests = [
+  "DevOps & SRE",
+  "Cloud Automation",
+  "Containerization",
   "Blockchain Technology",
-  "Web Development",
   "IoT",
-  "Quantum Computing",
-  "Competitive Programming",
 ];
 
 export default function Certifications() {

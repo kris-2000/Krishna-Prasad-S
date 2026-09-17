@@ -5,24 +5,22 @@ import { Briefcase } from 'lucide-react';
 const experiences = [
   {
     role: "Software Development Trainee",
-    company: "Nyeste Ventures, Thiruvananthapuram",
-    date: "Aug 2023 – Feb 2024",
+    company: "Nyeste Venture Technologies",
+    date: "Jun 2023 – Jan 2024",
     description: [
-      "Developed Python GUI applications using Tkinter for streamlined data processing.",
-      "Built responsive web applications with Bootstrap and advanced CSS.",
-      "Collaborated with clients to define project requirements and deliver solutions.",
-      "Gained hands-on experience in an agile, full-stack development environment.",
+      "Developed Django-based Hospital Management System with backend logic and MySQL integration.",
+      "Managed version control and team collaboration using Git.",
+      "Gained exposure to application deployment and troubleshooting in a team environment.",
     ],
   },
   {
-    role: "Embedded Systems Developer Intern",
-    company: "Acutro Technologies, Technopark",
-    date: "Mar 2023 – Jun 2023",
+    role: "Robotics / Embedded Systems Intern",
+    company: "Acutro Technologies",
+    date: "Feb 2023 – May 2023",
     description: [
-      "Designed microcontroller-based IoT and automation systems.",
-      "Integrated various sensors and actuators for data acquisition and control.",
-      "Worked on the development of robots and autonomous cars.",
-      "Created comprehensive technical documentation for projects.",
+      "Developed IoT and robotics prototypes using Arduino and microcontrollers.",
+      "Integrated sensors and actuators for real-time automation and data acquisition.",
+      "Created comprehensive technical documentation for hardware projects.",
     ],
   },
 ];
