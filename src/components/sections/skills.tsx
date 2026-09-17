@@ -33,6 +33,11 @@ const skillCategories = [
     icon: <Code className="text-primary" />,
     skills: ["Python", "Bash", "JavaScript", "Java", "C", "SQL"],
   },
+  {
+    title: "Blockchain & Additional",
+    icon: <Layers className="text-primary" />,
+    skills: ["Ethereum", "Solidity", "Smart Contracts", "Web3.js", "IoT"],
+  },
 ];
 
 export default function Skills() {

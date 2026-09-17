@@ -32,6 +32,18 @@ const projects: Project[] = [
     description: "Built full-stack Ethereum NFT marketplace with ERC-721 smart contracts, React.js, and MetaMask. Applied Git workflows and modular development.",
     tech: ["Ethereum", "Solidity", "MetaMask", "React.js", "Git"],
   },
+  {
+    title: "Decentralized Authentication System",
+    icon: <Code className="text-primary" />,
+    description: "Developed passwordless, secure authentication using the Ethereum blockchain, MetaMask, and SIWE protocol with smart contract-based cryptographic identity verification.",
+    tech: ["Ethereum", "Solidity", "MetaMask", "SIWE", "Web3.js"],
+  },
+  {
+    title: "JARVIS – Intelligent Virtual Assistant",
+    icon: <Bot className="text-primary" />,
+    description: "A voice-activated virtual assistant built in Python to respond to spoken commands and perform various tasks on the local machine.",
+    tech: ["Python", "Voice Recognition"],
+  },
 ];
 
 export default function Projects() {
