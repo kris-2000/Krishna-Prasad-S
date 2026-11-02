@@ -7,8 +7,8 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Krishna Prasad S | Software Engineer",
-  description: "Personal portfolio of Krishna Prasad S, an MCA student and aspiring Software Engineer specializing in Blockchain and Web Development.",
+  title: "Krishna Prasad S | DevOps & Cloud Engineer",
+  description: "DevOps & Cloud Engineer specializing in AWS, Terraform, Kubernetes, Docker, and DevSecOps CI/CD pipelines. MCA 2026 graduate & immediate joiner.",
 };
 
 export default function RootLayout({

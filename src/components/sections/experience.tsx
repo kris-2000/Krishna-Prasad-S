@@ -8,19 +8,18 @@ const experiences = [
     company: "Nyeste Venture Technologies",
     date: "Jun 2023 – Jan 2024",
     description: [
-      "Developed Django-based Hospital Management System with backend logic and MySQL integration.",
-      "Managed version control and team collaboration using Git.",
-      "Gained exposure to application deployment and troubleshooting in a team environment.",
+      "Engineered backend RESTful microservices and workflows for a Hospital Management System utilizing Python and Django.",
+      "Designed and optimized relational database schemas in MySQL for patient electronic medical records (EMR) and appointment scheduling.",
+      "Managed collaborative feature branch workflows in Git, resolving staging merge conflicts, debugging deployment bottlenecks, and verifying feature releases in staging environments.",
     ],
   },
   {
-    role: "Robotics / Embedded Systems Intern",
+    role: "Robotics & Embedded Systems Intern",
     company: "Acutro Technologies",
     date: "Feb 2023 – May 2023",
     description: [
-      "Developed IoT and robotics prototypes using Arduino and microcontrollers.",
-      "Integrated sensors and actuators for real-time automation and data acquisition.",
-      "Created comprehensive technical documentation for hardware projects.",
+      "Programmed microcontroller firmware in C/C++ on Arduino platforms, interfacing sensor telemetry and actuators for real-time automated IoT hardware prototypes.",
+      "Authored comprehensive technical system documentation and hardware-software integration workflows.",
     ],
   },
 ];
@@ -28,42 +27,48 @@ const experiences = [
 export default function Experience() {
   return (
     <AnimatedSection id="experience">
-      <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-center mb-12">
-        Work Experience
-      </h2>
-      <div className="relative max-w-3xl mx-auto">
-        <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border/50 transform -translate-x-1/2"></div>
-        {experiences.map((exp, index) => (
-          <div key={index} className="relative mb-12">
-            <div className={`flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-              <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
-                <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-colors duration-300 shadow-md hover:shadow-primary/20">
-                  <CardHeader>
-                    <div className="flex items-center gap-3">
-                        <Briefcase className="h-6 w-6 text-primary flex-shrink-0" />
-                        <div>
-                            <CardTitle className="text-xl">{exp.role}</CardTitle>
-                            <CardDescription className="text-sm">{exp.company}</CardDescription>
-                        </div>
+      <div className="max-w-4xl mx-auto space-y-12">
+        <div className="text-center space-y-3">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Work Experience
+          </h2>
+          <p className="text-muted-foreground">
+            Hands-on professional engineering experience across backend services, systems, and release workflows.
+          </p>
+        </div>
+
+        <div className="space-y-8">
+          {experiences.map((exp, index) => (
+            <Card key={index} className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-colors duration-300 shadow-md hover:shadow-primary/10">
+              <CardHeader className="pb-3">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                      <Briefcase className="h-5 w-5" />
                     </div>
-                    <p className="text-xs text-muted-foreground pt-2">{exp.date}</p>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      {exp.description.map((point, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                           <div className="h-1.5 w-1.5 mt-1.5 bg-accent rounded-full flex-shrink-0"></div>
-                           <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-            <div className="absolute left-1/2 top-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background transform -translate-x-1/2 -translate-y-1/2"></div>
-          </div>
-        ))}
+                    <div>
+                      <CardTitle className="text-xl font-bold">{exp.role}</CardTitle>
+                      <CardDescription className="text-sm font-medium text-primary/90">{exp.company}</CardDescription>
+                    </div>
+                  </div>
+                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-secondary text-secondary-foreground w-fit">
+                    {exp.date}
+                  </span>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-2">
+                <ul className="space-y-2.5 text-sm text-muted-foreground">
+                  {exp.description.map((point, i) => (
+                    <li key={i} className="flex items-start gap-2.5">
+                      <div className="h-1.5 w-1.5 mt-2 bg-accent rounded-full flex-shrink-0" />
+                      <span className="leading-relaxed">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </AnimatedSection>
   );

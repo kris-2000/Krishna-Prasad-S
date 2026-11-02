@@ -5,29 +5,33 @@ import { GraduationCap } from 'lucide-react';
 const education = [
   {
     degree: "Master of Computer Applications (MCA)",
-    institution: "College of Engineering, Chengannur, Kerala",
+    institution: "College of Engineering Chengannur, Kerala",
     date: "2024 – 2026",
+    badge: "CGPA: 7.53 • Immediate Joiner",
     description: [
-      "Completed comprehensive DevOps course covering Kubernetes, Jenkins, Docker, and CI/CD.",
-      "Focused on cloud computing, containerization, and backend software engineering.",
+      "Academic & Lab Specialization: DevOps, Cloud Computing (AWS), Infrastructure as Code (Terraform), System Design, and Linux Administration.",
+      "Completed comprehensive practical curriculum covering Kubernetes container orchestration, Docker, Jenkins automated pipelines, Prometheus, and Grafana.",
+      "Hands-on architectural implementation of high-availability multi-tier cloud systems.",
     ],
   },
   {
     degree: "Diploma in Computer Engineering",
     institution: "Govt. Polytechnic College, Neyyattinkara, Kerala",
     date: "2022 – 2024",
+    badge: "Technical Foundation",
     description: [
-      "Gained hands-on experience in networking, hardware, and core computer science subjects.",
-      "Completed IoT and embedded systems projects.",
+      "Rigorous hands-on training in computer networking, operating systems, and computer hardware architecture.",
+      "Programmed microcontrollers and built IoT telemetry systems.",
     ],
   },
   {
     degree: "Bachelor of Science (Physics)",
     institution: "VTM NSS College, Dhanuvachapuram, Kerala",
     date: "2018 – 2022",
+    badge: "Analytical Core",
     description: [
-      "Built a strong foundation in physics, mathematics, and electronics.",
-      "Developed analytical and problem-solving skills.",
+      "Strong analytical, mathematical, and logic fundamentals.",
+      "Electives in semiconductor electronics, instrumentation, and scientific computation.",
     ],
   },
 ];
@@ -35,42 +39,55 @@ const education = [
 export default function Education() {
   return (
     <AnimatedSection id="education" className="bg-background/50">
-      <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-center mb-12">
-        Education
-      </h2>
-      <div className="relative max-w-3xl mx-auto">
-        <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border/50 transform -translate-x-1/2"></div>
-        {education.map((edu, index) => (
-          <div key={index} className="relative mb-12">
-            <div className={`flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-              <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
-                <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-colors duration-300 shadow-md hover:shadow-primary/20">
-                  <CardHeader>
-                    <div className="flex items-center gap-3">
-                        <GraduationCap className="h-6 w-6 text-primary flex-shrink-0" />
-                        <div>
-                            <CardTitle className="text-xl">{edu.degree}</CardTitle>
-                            <CardDescription className="text-sm">{edu.institution}</CardDescription>
-                        </div>
+      <div className="max-w-4xl mx-auto space-y-12">
+        <div className="text-center space-y-3">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Education & Academic Background
+          </h2>
+          <p className="text-muted-foreground">
+            Academic qualifications and rigorous engineering foundations.
+          </p>
+        </div>
+
+        <div className="space-y-8">
+          {education.map((edu, index) => (
+            <Card key={index} className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-colors duration-300 shadow-md hover:shadow-primary/10">
+              <CardHeader className="pb-3">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                      <GraduationCap className="h-5 w-5" />
                     </div>
-                    <p className="text-xs text-muted-foreground pt-2">{edu.date}</p>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      {edu.description.map((point, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                           <div className="h-1.5 w-1.5 mt-1.5 bg-accent rounded-full flex-shrink-0"></div>
-                           <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-            <div className="absolute left-1/2 top-1/2 w-4 h-4 bg-accent rounded-full border-4 border-background transform -translate-x-1/2 -translate-y-1/2"></div>
-          </div>
-        ))}
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <CardTitle className="text-xl font-bold">{edu.degree}</CardTitle>
+                      </div>
+                      <CardDescription className="text-sm font-medium text-primary/90">{edu.institution}</CardDescription>
+                    </div>
+                  </div>
+                  <div className="flex flex-col sm:items-end gap-1">
+                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-secondary text-secondary-foreground w-fit">
+                      {edu.date}
+                    </span>
+                    <span className="text-xs font-medium text-emerald-400">
+                      {edu.badge}
+                    </span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-2">
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  {edu.description.map((point, i) => (
+                    <li key={i} className="flex items-start gap-2.5">
+                      <div className="h-1.5 w-1.5 mt-2 bg-accent rounded-full flex-shrink-0" />
+                      <span className="leading-relaxed">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </AnimatedSection>
   );
